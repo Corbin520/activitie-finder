@@ -1,6 +1,6 @@
 var servePage = document.getElementById("main-page")
 // comment back in
-// servePage.style.display = "none";
+servePage.style.display = "none";
 
 class Name {
     constructor(param) {
@@ -38,7 +38,9 @@ function optionsButton() {
 
         var queryOption = selectedOption
         console.log("button clicked: " + queryOption);
-        var apiKey = ""
+        var apiKey = 
+
+        // Need to get activities with images to display on the screen when searched for them!
 
         var queryURL = "https://www.googleapis.com/customsearch/v1?key=" + apiKey + "&cx=017576662512468239146:omuauf_lfve&q=" + queryOption;
 
@@ -46,7 +48,10 @@ function optionsButton() {
             url: queryURL,
             method: "GET"
         }).then(function(response) {
-            console.log(response)
+            // console.log(response)
+
+            var result = response.items
+            console.log(result)
         })
     }
 }

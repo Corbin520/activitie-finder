@@ -1,4 +1,12 @@
 
+body {
+    background-image: url("./assets/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+}
+
 #main-header {
     text-align: center;
     font-weight: bold;
@@ -39,4 +47,16 @@
     margin-right: auto;
     text-align: center;
     height: 55px; 
+}
+
+#main-h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 25px;
+    background-color:gray;
+    padding-bottom: 45px;
+    opacity: .85;
+    font-weight: bolder;
+    font-size: 65px;
+    text-decoration: underline;
 }
