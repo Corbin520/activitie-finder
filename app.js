@@ -1,6 +1,6 @@
 var servePage = document.getElementById("main-page")
 // comment back in
-servePage.style.display = "none";
+// servePage.style.display = "none";
 
 class Name {
     constructor(param) {
@@ -31,14 +31,24 @@ async function mainPage() {
 function optionsButton() {
     var options = document.getElementById("selectedOption");
     var selectedOption  = options.options[options.selectedIndex].value;
-    console.log(selectedOption)
+    // console.log(selectedOption)
 
     if(selectedOption != null) {
-        console.log("options has been picked")
+        // console.log("options has been picked")
 
-        // API CALL
+        var queryOption = selectedOption
+        console.log("button clicked: " + queryOption);
+        var apiKey = ""
+
+        var queryURL = "https://www.googleapis.com/customsearch/v1?key=" + apiKey + "&cx=017576662512468239146:omuauf_lfve&q=" + queryOption;
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function(response) {
+            console.log(response)
+        })
     }
-
 }
 
 
