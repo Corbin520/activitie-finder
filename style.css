@@ -1,0 +1,29 @@
+
+#main-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+#input-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nameDiv {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#main-page {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.options {
+    width: 50%;
+    text-align: center;
+}

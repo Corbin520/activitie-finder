@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Activities</title>
+</head>
+<body>
+
+    <h1 id="main-header">Enter Name</h1>
+
+    <div id="input-form">
+        <input id="myText">
+        <button id="button" onclick="nameFunc()">ENTER</button>
+    </div>
+
+    <div class="nameDiv">
+        <h1 id="name"></h1>        
+    </div>
+
+    <div id="main-page">
+        <h2>What would you like todo?</h2>
+        <select class="options">
+            <option selected>Options..</option>
+            <option value="food">Food/Dining</option>
+            <option value="activities">Activities</option>
+            <option value="Sites">Sites</option>
+          </select>
+    </div>
+
+
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
+
+<!-- I want this page to use API's to reach out to get food places, activities, events etc -->
