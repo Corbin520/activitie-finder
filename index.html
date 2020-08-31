@@ -23,12 +23,13 @@
 
     <div id="main-page">
         <h2>What would you like todo?</h2>
-        <select class="options">
-            <option selected>Options..</option>
-            <option value="food">Food/Dining</option>
-            <option value="activities">Activities</option>
-            <option value="Sites">Sites</option>
+        <select id="selectedOption" class="options">
+            <option selected>Select from the options below</option>
+            <option id="foodOption" value="food">Food/Dining</option>
+            <option id="activitiesOption" value="activities">Activities</option>
+            <option id="sitesOption" value="Sites">Sites</option>
           </select>
+          <button type="button" onclick="optionsButton()" id="optSubBttn" class="btn btn-secondary btn-lg btn-block">Submit</button>
     </div>
 
 

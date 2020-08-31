@@ -28,6 +28,20 @@ async function mainPage() {
     servePage.style.display = "block";
 }
 
+function optionsButton() {
+    var options = document.getElementById("selectedOption");
+    var selectedOption  = options.options[options.selectedIndex].value;
+    console.log(selectedOption)
+
+    if(selectedOption != null) {
+        console.log("options has been picked")
+
+        // API CALL
+    }
+
+}
+
+
 
 
 
