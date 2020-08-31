@@ -1,6 +1,6 @@
 var servePage = document.getElementById("main-page")
 // comment back in
-// servePage.style.display = "none";
+servePage.style.display = "none";
 
 class Name {
     constructor(param) {

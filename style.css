@@ -9,11 +9,13 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-top: 75px;
 }
 
 .nameDiv {
     text-align: center;
     padding-bottom: 50px;
+    padding-top: 50px
 }
 
 #main-page {
