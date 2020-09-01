@@ -20,39 +20,27 @@ class Zip {
     }
 }
 
-
+// function that handles the name inputs
 function nameFunc() {
     var userInput = document.getElementById("input-name").value;
     var inputForm = document.getElementById("input-form");
     var mainHeader = document.getElementById("main-header")
-
-
     var userName = new Name(userInput)
     var printPage = document.getElementById("name")
     printPage.textContent = "Hello " + userName.printName() + "!";
     mainHeader.style.display = "none";
     inputForm.style.display = "none";
-
-
     var zipInput = document.getElementById("input-zip").value
     var userZip = new Zip(zipInput);
     var printZipPage = document.getElementById("zip")
     printZipPage.textContent = "Zip Code: " + userZip.printZipCode()
-
-    
-    
-
-
     mainPage()
 }
-
-
-
-
+// handles the loading of the page
 async function mainPage() {
     servePage.style.display = "block";
 }
-
+// handles the buttons from the form
 function optionsButton() {
     var options = document.getElementById("selectedOption");
     var selectedOption  = options.options[options.selectedIndex].value;
@@ -63,11 +51,11 @@ function optionsButton() {
 
         var queryOption = selectedOption
         console.log("button clicked: " + queryOption);
-        var apiKey = ""
+        var apiKey = 
 
         // Need to get activities with images to display on the screen when searched for them!
 
-        var queryURL = "https://www.googleapis.com/customsearch/v1?key=" + apiKey + "&cx=017576662512468239146:omuauf_lfve&q=" + queryOption;
+        var queryURL = "https://www.googleapis.com/customsearch/v1?key=" + apiKey + "&cx=017576662512468239146:omuauf_lfve&q=" + queryOption; // add a term for near me
 
         $.ajax({
             url: queryURL,

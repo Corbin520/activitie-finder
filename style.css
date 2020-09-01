@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("./assets/images/background.png");
+    background-image: url("./assets/images/background2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -10,6 +10,7 @@ body {
 #main-header {
     text-align: center;
     font-weight: bold;
+    font-family: 'Rubik', sans-serif;
 }
 
 #input-form {
@@ -17,7 +18,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top: 75px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
 }
 
 .nameDiv {
@@ -53,13 +56,14 @@ body {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     padding-top: 25px;
-    background-color:gray;
+    background-color: white;
     padding-bottom: 45px;
-    opacity: .85;
+    opacity: .65;
     font-weight: bolder;
     font-size: 65px;
     text-decoration: underline;
     border-bottom: solid 3px;
+    color: black;
 }
 
 #footer {
@@ -69,11 +73,13 @@ body {
     font-size: 25px;
     width: 100%;
     bottom: 0;
-    background-color:gray;
+    background-color: black;
     position: fixed;
     border-top: solid 3px;
     padding-top: 10px;
     padding-bottom: 10px;
+    opacity: .65;
+    color: white;
 }
 
 #footer-text {
@@ -83,8 +89,9 @@ body {
 #welcome-info {
     text-align: center;
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    padding-top: 15px;
+    font-size: 17px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-weight: bold;
     width: 50%;
     margin-left: auto;
@@ -92,23 +99,37 @@ body {
     display: block;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    opacity: 0.85;
+    padding-top: 50px
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 
 
 
 
-
-
-
-
-#map {
+/* #map {
     height: 300px;
     width: 300px;
     border-radius: 400px;
   }
   /* Optional: Makes the sample page fill the window. */
-  html, body {
+  /* html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+  } */
