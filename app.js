@@ -3,25 +3,50 @@ var servePage = document.getElementById("main-page")
 servePage.style.display = "none";
 
 class Name {
-    constructor(param) {
-        this.param = param
+    constructor(name) {
+        this.name = name
     }
-    print() {
-        return this.param
+    printName() {
+        return this.name
     }
 }
 
+class Zip {
+    constructor(zipIsh) {
+        this.zipIsh = zipIsh
+    }
+    printZipCode() {
+        return this.zipIsh
+    }
+}
+
+
 function nameFunc() {
-    var userInput = document.getElementById("myText").value;
+    var userInput = document.getElementById("input-name").value;
     var inputForm = document.getElementById("input-form");
     var mainHeader = document.getElementById("main-header")
+
+
     var userName = new Name(userInput)
     var printPage = document.getElementById("name")
-    printPage.textContent = "Hello " + userName.print() + "!";
+    printPage.textContent = "Hello " + userName.printName() + "!";
     mainHeader.style.display = "none";
     inputForm.style.display = "none";
+
+
+    var zipInput = document.getElementById("input-zip").value
+    var userZip = new Zip(zipInput);
+    var printZipPage = document.getElementById("zip")
+    printZipPage.textContent = "Zip Code: " + userZip.printZipCode()
+
+    
+    
+
+
     mainPage()
 }
+
+
 
 
 async function mainPage() {
@@ -38,7 +63,7 @@ function optionsButton() {
 
         var queryOption = selectedOption
         console.log("button clicked: " + queryOption);
-        
+        var apiKey = ""
 
         // Need to get activities with images to display on the screen when searched for them!
 
@@ -55,11 +80,6 @@ function optionsButton() {
         })
     }
 }
-
-
-
-
-
 
 
 
