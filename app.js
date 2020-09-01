@@ -51,7 +51,7 @@ function optionsButton() {
 
         var queryOption = selectedOption
         console.log("button clicked: " + queryOption);
-        var apiKey = 
+        var apiKey = "AIzaSyDmvafNWKAHVyPrP6SwfEDQ7C2EM6pP6Hw"
 
         // Need to get activities with images to display on the screen when searched for them!
 
