@@ -11,6 +11,8 @@
 </head>
 <body>
 
+    
+
     <h1 id="main-h1">ACTIVITY FINDER</h1>
     
     <p id="welcome-info">
@@ -24,7 +26,7 @@
         <h1 id="main-header">ENTER NAME & ZIP CODE</h1>
         <input id="input-name" placeholder="NAME">
         <input id="input-zip" placeholder="ZIP CODE">
-        <button id="button" onclick="nameFunc()">ENTER</button>
+        <button id="button" href="#jump-target" onclick="nameFunc()">ENTER</button>
     </div>
 
     <div class="row">
@@ -44,7 +46,7 @@
 
     <div class="nameDiv">
         <h1 id="name"></h1>        
-        <h1 id="zip"></h1>        
+        <!-- <h1 id="zip"></h1>         -->
     </div>
 
     <div id="main-page">
@@ -56,12 +58,15 @@
             <option id="activitiesOption" value="activities">Activities</option>
             <option id="sitesOption" value="Sites">Sites</option>
           </select>
-          <button type="button" onclick="optionsButton()" id="optSubBttn" class="btn btn-secondary btn-lg btn-block">Submit</button>
-    </div>
-
-    <footer id="footer">
+          <button type="button" onclick="optionsButton()" id="submit-bttn" class="btn btn-secondary btn-lg btn-block">Submit</button>
+        </div>
+        
+        
+    <footer id="footer">   
         <h6 id="footer-text">CBWebPro&copy;</h6>
     </footer>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD45K-apfDQ_ldoZHLqbcSp2ocbPbtKYVk&callback=initMap" async defer></script> -->

@@ -24,16 +24,19 @@ class Zip {
 function nameFunc() {
     var userInput = document.getElementById("input-name").value;
     var inputForm = document.getElementById("input-form");
+    var aboutApp = document.getElementById("welcome-info")
     var mainHeader = document.getElementById("main-header")
     var userName = new Name(userInput)
     var printPage = document.getElementById("name")
     printPage.textContent = "Hello " + userName.printName() + "!";
     mainHeader.style.display = "none";
     inputForm.style.display = "none";
+    aboutApp.style.display = "none";
     var zipInput = document.getElementById("input-zip").value
     var userZip = new Zip(zipInput);
-    var printZipPage = document.getElementById("zip")
-    printZipPage.textContent = "Zip Code: " + userZip.printZipCode()
+    console.log("Users Zip: " + userZip.printZipCode()) // enter this into API as area
+    // var printZipPage = document.getElementById("zip")
+    // printZipPage.textContent = "Zip Code: " + userZip.printZipCode()
     mainPage()
 }
 // handles the loading of the page
